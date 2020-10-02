@@ -1,1 +1,3 @@
-# Vanilla-Expanded-Royalty-Patches
+# Vanilla Expanded Royalty Patches
+
+All the patches
