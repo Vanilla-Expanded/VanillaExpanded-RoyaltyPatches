@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Vanilla Expanded - Royalty Patches</name>
+	<author>Oskar Potocki, Kikohi</author>
+	<supportedVersions>
+		<li>1.1</li>
+		<li>1.2</li>
+	</supportedVersions>
+    <packageId>OskarPotocki.VanillaExpanded.RoyaltyPatches</packageId>
+	<description>
+		All the royalty patches into one mod.
+	</description>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>brrainz.harmony</li>
+	</loadAfter>
+</ModMetaData>
