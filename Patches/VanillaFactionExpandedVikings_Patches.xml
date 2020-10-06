@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <!-- Royalty need patches-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Factions Expanded - Vikings</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RoyalTitleDef[defName=defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or defName="Duke" or defName="Consul" or defName="Stellarch" or defName="Emperor"]/throneRoomRequirements//li[6]/things</xpath>
+          <value>
+            <li>VFEV_RunedColumn</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RoyalTitleDef[defName=defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or defName="Duke" or defName="Consul" or defName="Stellarch" or defName="Emperor"]/throneRoomRequirements//li[5]/things</xpath>
+          <value>
+            <li>VFEV_Hearth</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

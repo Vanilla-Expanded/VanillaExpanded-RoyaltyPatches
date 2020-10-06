@@ -1,0 +1,8 @@
+Fix need emperor need displaying nothing when requirement are met
+Undignified throneroom error (most likely because of the custom RoomRequirement (add x RoomRequirement_ThingAnyOf for x being the count?))
+
+Cheese (at least regular cheese) should count if it won't break anything. (Come on, cheese and wine?)
+Great dress from Settlers should satisfy if it doesn't already.
+Vest from settlers should satisfy if it doesn't already.
+The Gourmet Grills/Desserts etc should satisfy royals if they don’t already
+All the gourmet and lavish ones should
