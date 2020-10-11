@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
   <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
     <mods>
       <li>Vanilla Furniture Expanded</li>
     </mods>
@@ -72,9 +73,9 @@
             <li>Joy_Piano</li>
           </value>
         </li>
-        <!-- Use the royalty one-->
+        <!-- Use the royalty one -->
         <li Class="PatchOperationAdd">
-          <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or defName="Duke" or defName="Consul" or defName="Stellarch" or defName="Emperor"]/throneRoomRequirements//li[7]/things</xpath>
+          <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor"]/throneRoomRequirements//li[7]/things</xpath>
           <value>
             <li>Joy_Piano</li>
           </value>
