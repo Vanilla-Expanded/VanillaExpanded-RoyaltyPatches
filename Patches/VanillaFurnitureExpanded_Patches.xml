@@ -16,21 +16,21 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or defName="Duke" or defName="Consul" or defName="Stellarch" or defName="Emperor"]/bedroomRequirements//li[4]/things</xpath>
+          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[4]/things</xpath>
           <value>
             <li>Bed_Kingsize</li>
             <li>Bed_DoubleErgonomic</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or defName="Duke" or defName="Consul" or defName="Stellarch" or defName="Emperor"]/bedroomRequirements//li[5]/things</xpath>
+          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[5]/things</xpath>
           <value>
             <li>Table_LightEndTable</li>
             <li>Table_RoyalEndTable</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or defName="Duke" or defName="Consul" or defName="Stellarch" or defName="Emperor"]/bedroomRequirements//li[6]/things</xpath>
+          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[6]/things</xpath>
           <value>
             <li>Table_RoyalDresser</li>
           </value>

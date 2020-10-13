@@ -9,19 +9,19 @@
     <match Class="PatchOperationSequence">
       <operations>
         <li Class="PatchOperationAdd">
-          <xpath>Defs/RoyalTitleDef[defName=defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or defName="Duke" or defName="Consul" or defName="Stellarch" or defName="Emperor"]/throneRoomRequirements//li[6]/things</xpath>
+          <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements//li[6]/things</xpath>
           <value>
             <li>VFEV_RunedColumn</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs/RoyalTitleDef[defName=defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or defName="Duke" or defName="Consul" or defName="Stellarch" or defName="Emperor"]/throneRoomRequirements//li[5]/things</xpath>
+          <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements//li[5]/things</xpath>
           <value>
             <li>VFEV_Hearth</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or defName="Duke" or defName="Consul" or defName="Stellarch" or defName="Emperor"]/throneRoomRequirements</xpath>
+          <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements</xpath>
           <value>
             <li Class="RoomRequirement_AllThingsAreGlowing">
               <labelKey>RoomRequirementAllHeartsMustBeLit</labelKey>
