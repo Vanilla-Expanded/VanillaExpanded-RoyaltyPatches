@@ -26,4 +26,4 @@ Things patched:
     Illuminated dresser is now acceptable by royals.
     Illuminated end table is now acceptable by royals.
 
-In addtion to that, those new patches fixed the previous issues with quest requirement. I.e the royals ascent quest couldn't be accepted if room used one of the replacements add by Vanilla Expanded. This is no longer the case.
+In addtion to that, those new patches fixed the previous issues with quest requirement. I.e the royals ascent quest couldn't be accepted if room used one of the replacements added by Vanilla Expanded. This is no longer the case.
