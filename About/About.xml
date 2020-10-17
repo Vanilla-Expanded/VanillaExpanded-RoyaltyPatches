@@ -7,7 +7,11 @@
     <li>1.2</li>
   </supportedVersions>
   <packageId>OskarPotocki.VanillaExpanded.RoyaltyPatches</packageId>
-  <description>All the royalty patches into one mod.</description>
+  <description>Vanilla Expanded Royalty patches is a large collection of patches for all of our Vanilla Expanded mods, bringing key functionality to complement Royalty DLC mechanics. This patch collection will be constantly updated as time goes on with new Vanilla Expanded mods.
+
+You do not need all the Vanilla Expanded mods for this to work - the patches trigger only if their respective mods are found.
+    
+This mod requires Royalty to work, obviously.</description>
   <loadBefore>
     <li>VanillaExpanded.VFECore</li>
     <li>VanillaExpanded.VFESpacer</li>
@@ -17,4 +21,10 @@
     <li>Ludeon.RimWorld.Royalty</li>
     <li>brrainz.harmony</li>
   </loadAfter>
+  <modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Royalty</packageId>
+			<displayName>Royalty</displayName>
+		</li>
+	</modDependencies>
 </ModMetaData>
