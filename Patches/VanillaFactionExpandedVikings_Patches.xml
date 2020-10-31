@@ -32,4 +32,31 @@
       </operations>
     </match>
   </Operation>
+
+  <!-- Royalty clothes -->
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Factions Expanded - Vikings</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VFEV_JarlCrown"]/apparel/tags</xpath>
+          <value>
+            <li>RoyalTier5</li>
+            <li>RoyalTier6</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VFEV_Apparel_JarlCape"]/apparel/tags</xpath>
+          <value>
+            <li>RoyalTier5</li>
+            <li>RoyalTier6</li>
+            <li>Cape</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
 </Patch>
