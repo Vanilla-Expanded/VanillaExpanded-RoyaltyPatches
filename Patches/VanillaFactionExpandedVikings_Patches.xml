@@ -57,10 +57,12 @@
       </operations>
     </match>
   </Operation>
-  <!-- Royalty toggable -->
-  <Operation Class="VERP.PatchOperationToggable">
-    <success>Always</success>
+  <!-- Toggable -->
+  <Operation Class="VFECore.PatchOperationToggable">
     <enabled>False</enabled>
+    <mods>
+      <li>Vanilla Factions Expanded - Vikings</li>
+    </mods>
     <label>Allow royals to use double fur bed:</label>
     <match Class="PatchOperationSequence">
       <operations>

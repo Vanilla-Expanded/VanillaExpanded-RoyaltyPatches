@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Patch>
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
@@ -115,6 +114,21 @@
           </match>
         </li>
       </operations>
+    </match>
+  </Operation>
+  <!-- Toggable -->
+  <Operation Class="VFECore.PatchOperationToggable">
+    <enabled>False</enabled>
+    <mods>
+      <li>Vanilla Cooking Expanded</li>
+      <li>Genetic Rim</li>
+    </mods>
+    <label>Rat cheese acceptable by royals:</label>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/RoyalTitleDef[defName="Esquire" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/foodRequirement/allowedDefs</xpath>
+      <value>
+        <li>VCE_RatCheese</li>
+      </value>
     </match>
   </Operation>
 </Patch>
