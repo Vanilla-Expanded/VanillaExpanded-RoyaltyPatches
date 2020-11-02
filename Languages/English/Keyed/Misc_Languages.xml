@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <RoomRequirementAllHeartsMustBeLit>all hearts must be lit</RoomRequirementAllHeartsMustBeLit>
+
+  <!-- Settings -->
+  <NeedRestart>&lt;b&gt;&lt;color=red&gt;All settings need a restart to be applied&lt;/color&gt;&lt;/b&gt;</NeedRestart>
 </LanguageData>

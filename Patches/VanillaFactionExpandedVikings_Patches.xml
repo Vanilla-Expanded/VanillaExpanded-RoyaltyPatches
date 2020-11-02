@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <Patch>
   <!-- Royalty need patches-->
   <Operation Class="PatchOperationFindMod">
@@ -32,7 +31,6 @@
       </operations>
     </match>
   </Operation>
-
   <!-- Royalty clothes -->
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
@@ -54,6 +52,28 @@
             <li>RoyalTier5</li>
             <li>RoyalTier6</li>
             <li>Cape</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- Royalty toggable -->
+  <Operation Class="VERP.PatchOperationToggable">
+    <success>Always</success>
+    <enabled>False</enabled>
+    <label>Allow royals to use double fur bed:</label>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RoyalTitleDef[defName="Esquire"]/bedroomRequirements//li[3]/things</xpath>
+          <value>
+            <li>VFEV_DoubleFurBed</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[4]/things</xpath>
+          <value>
+            <li>VFEV_DoubleFurBed</li>
           </value>
         </li>
       </operations>
