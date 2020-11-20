@@ -23,7 +23,7 @@
           <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements</xpath>
           <value>
             <li Class="RoomRequirement_AllThingsAreGlowing">
-              <labelKey>RoomRequirementAllHeartsMustBeLit</labelKey>
+              <labelKey>RoomRequirementAllHearthsMustBeLit</labelKey>
               <thingDef>VFEV_Hearth</thingDef>
             </li>
           </value>

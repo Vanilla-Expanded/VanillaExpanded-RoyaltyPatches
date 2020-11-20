@@ -9,6 +9,7 @@ using System.Xml.Linq;
 using System.Xml.XPath;
 using UnityEngine;
 using Verse;
+using VFECore;
 
 namespace VERP
 {
@@ -67,7 +68,7 @@ namespace VERP
         {
             foreach (PatchOperation patchOperation in modContentPack.Patches)
             {
-                if (patchOperation is VERP.PatchOperationToggable p && p != null)
+                if (patchOperation is VFECore.PatchOperationToggable p && p != null)
                 {
                     bool flag = p.enabled;
                     if (list.ButtonTextLabeled(p.label, p.enabled.ToString()))
