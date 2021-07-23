@@ -2,7 +2,6 @@
 <Patch>
   <!-- Royalty clothes -->
   <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
     <mods>
       <li>Vanilla Factions Expanded - Settlers</li>
     </mods>

@@ -1,6 +1,5 @@
 <Patch>
   <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
     <mods>
       <li>Vanilla Cooking Expanded</li>
     </mods>
@@ -15,7 +14,6 @@
         </li>
         <!-- Add Alpha Animals cheese to accepted food -->
         <li Class="PatchOperationFindMod">
-          <success>Always</success>
           <mods>
             <li>Alpha Animals</li>
           </mods>
@@ -29,7 +27,6 @@
         </li>
         <!-- Add Forsakens Fauna cheese to accepted food -->
         <li Class="PatchOperationFindMod">
-          <success>Always</success>
           <mods>
             <li>Forsakens: Fauna</li>
           </mods>
@@ -42,7 +39,6 @@
         </li>
         <!-- Add GeneticRim Cosmic Horrors Patch cheese to accepted food -->
         <li Class="PatchOperationFindMod">
-          <success>Always</success>
           <mods>
             <li>GeneticRim Cosmic Horrors Patch</li>
           </mods>
@@ -55,7 +51,6 @@
         </li>
         <!-- Add GeneticRim Dinosauria Patch cheese to accepted food -->
         <li Class="PatchOperationFindMod">
-          <success>Always</success>
           <mods>
             <li>GeneticRim Dinosauria Patch</li>
           </mods>
@@ -68,7 +63,6 @@
         </li>
         <!-- Add GeneticRim Megafauna Patch cheese to accepted food -->
         <li Class="PatchOperationFindMod">
-          <success>Always</success>
           <mods>
             <li>GeneticRim Megafauna Patch</li>
           </mods>
@@ -82,7 +76,6 @@
         </li>
         <!-- Add Genetic Rim cheese to accepted food -->
         <li Class="PatchOperationFindMod">
-          <success>Always</success>
           <mods>
             <li>Genetic Rim</li>
           </mods>
@@ -102,7 +95,6 @@
         </li>
         <!-- Add RimBees cheese to accepted food -->
         <li Class="PatchOperationFindMod">
-          <success>Always</success>
           <mods>
             <li>RimBees</li>
           </mods>

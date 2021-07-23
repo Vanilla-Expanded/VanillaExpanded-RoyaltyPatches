@@ -2,7 +2,6 @@
 <Patch>
   <!-- Royalty need patches-->
   <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
     <mods>
       <li>Vanilla Furniture Expanded - Spacer Module</li>
     </mods>

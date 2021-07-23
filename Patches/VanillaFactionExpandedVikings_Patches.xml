@@ -1,7 +1,6 @@
 <Patch>
   <!-- Royalty need patches-->
   <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
     <mods>
       <li>Vanilla Factions Expanded - Vikings</li>
     </mods>
@@ -33,7 +32,6 @@
   </Operation>
   <!-- Royalty clothes -->
   <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
     <mods>
       <li>Vanilla Factions Expanded - Vikings</li>
     </mods>

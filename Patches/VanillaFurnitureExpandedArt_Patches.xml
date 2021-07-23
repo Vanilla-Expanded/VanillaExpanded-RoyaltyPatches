@@ -2,7 +2,6 @@
 <Patch>
   <!-- Royalty need patches-->
   <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
     <mods>
       <li>Vanilla Furniture Expanded - Art</li>
     </mods>
