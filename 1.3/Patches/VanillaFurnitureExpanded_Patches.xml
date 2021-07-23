@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Royalty need patches-->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RoyalTitleDef[defName="Esquire"]/bedroomRequirements//li[3]/things</xpath>
+          <value>
+            <li>Bed_Kingsize</li>
+            <li>Bed_DoubleErgonomic</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[4]/things</xpath>
+          <value>
+            <li>Bed_Kingsize</li>
+            <li>Bed_DoubleErgonomic</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[5]/things</xpath>
+          <value>
+            <li>Table_LightEndTable</li>
+            <li>Table_RoyalEndTable</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[6]/things</xpath>
+          <value>
+            <li>Table_RoyalDresser</li>
+          </value>
+        </li>
+        <!-- Make the piano use royalty music system -->
+        <li Class="PatchOperationAttributeSet">
+          <xpath>/Defs/ThingDef[defName="Joy_Piano"]</xpath>
+          <attribute>ParentName</attribute>
+          <value>MusicalInstrumentBase</value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Joy_Piano"]</xpath>
+          <value>
+            <interactionCellOffset>(0,0,1)</interactionCellOffset>
+            <soundPlayInstrument>Piano_Play</soundPlayInstrument>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Joy_Piano"]/building</xpath>
+          <value>
+            <instrumentRange>20</instrumentRange>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Joy_Piano"]/building/joyKind</xpath>
+          <value>
+            <joyKind>HighCulture</joyKind>
+          </value>
+        </li>
+        <!-- Remove the VFE jobs for the piano -->
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/JobDef[defName="Play_Piano"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/JoyGiverDef[defName="Play_Piano"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/JoyGiverDef[defName="Play_MusicalInstrument"]/thingDefs</xpath>
+          <value>
+            <li>Joy_Piano</li>
+          </value>
+        </li>
+        <!-- Use the royalty one -->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor"]/throneRoomRequirements//li[7]/things</xpath>
+          <value>
+            <li>Joy_Piano</li>
+          </value>
+        </li>
+        <!-- Make radio use the royalty music joy -->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Radio_Industrial" or defName="Radio_Spacer"]/tradeTags</xpath>
+          <value>
+            <tradeTags>
+              <li>MusicalInstrument</li>
+            </tradeTags>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Radio_Industrial" or defName="Radio_Spacer"]</xpath>
+          <value>
+            <tickerType>Normal</tickerType>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Radio_Industrial" or defName="Radio_Spacer"]/comps</xpath>
+          <value>
+            <li Class="CompProperties_ThrownMoteEmitter">
+              <mote>Mote_Music</mote>
+              <offsetMin>(-0.6,0,0.3)</offsetMin>
+              <offsetMax>(0.6,0,0.5)</offsetMax>
+              <emissionInterval>200</emissionInterval>
+              <scale>0.6~0.9</scale>
+              <rotationRate>-15~15</rotationRate>
+              <velocityX>0.3~0.7</velocityX>
+              <velocityY>0.7~1.0</velocityY>
+            </li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,126 @@
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Cooking Expanded</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Add normal cheese to accepted food -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RoyalTitleDef[defName="Esquire" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/foodRequirement/allowedDefs</xpath>
+          <value>
+            <li>VCE_Cheese</li>
+          </value>
+        </li>
+        <!-- Add Alpha Animals cheese to accepted food -->
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>Alpha Animals</li>
+          </mods>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/RoyalTitleDef[defName="Esquire" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/foodRequirement/allowedDefs</xpath>
+            <value>
+              <li>VCE_BlueCheese</li>
+              <li>VCE_GowCheese</li>
+            </value>
+          </match>
+        </li>
+        <!-- Add Forsakens Fauna cheese to accepted food -->
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>Forsakens: Fauna</li>
+          </mods>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/RoyalTitleDef[defName="Esquire" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/foodRequirement/allowedDefs</xpath>
+            <value>
+              <li>VCE_NightCheese</li>
+            </value>
+          </match>
+        </li>
+        <!-- Add GeneticRim Cosmic Horrors Patch cheese to accepted food -->
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>GeneticRim Cosmic Horrors Patch</li>
+          </mods>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/RoyalTitleDef[defName="Esquire" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/foodRequirement/allowedDefs</xpath>
+            <value>
+              <li>VCE_EldritchCheese</li>
+            </value>
+          </match>
+        </li>
+        <!-- Add GeneticRim Dinosauria Patch cheese to accepted food -->
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>GeneticRim Dinosauria Patch</li>
+          </mods>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/RoyalTitleDef[defName="Esquire" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/foodRequirement/allowedDefs</xpath>
+            <value>
+              <li>VCE_DinoCheese</li>
+            </value>
+          </match>
+        </li>
+        <!-- Add GeneticRim Megafauna Patch cheese to accepted food -->
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>GeneticRim Megafauna Patch</li>
+          </mods>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/RoyalTitleDef[defName="Esquire" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/foodRequirement/allowedDefs</xpath>
+            <value>
+              <li>VCE_ParaceramuffaloBrie</li>
+              <li>VCE_GreenCheese</li>
+            </value>
+          </match>
+        </li>
+        <!-- Add Genetic Rim cheese to accepted food -->
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>Genetic Rim</li>
+          </mods>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/RoyalTitleDef[defName="Esquire" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/foodRequirement/allowedDefs</xpath>
+            <value>
+              <li>VCE_WeirdCheese</li>
+              <li>VCE_MechaCheese</li>
+              <li>VCE_BearffaloCheese</li>
+              <li>VCE_ThrumffaloGouda</li>
+              <li>VCE_LumpyCheese</li>
+              <li>VCE_ChickenffaloCheese</li>
+              <li>VCE_BrownCheese</li>
+              <li>VCE_HairyCheese</li>
+            </value>
+          </match>
+        </li>
+        <!-- Add RimBees cheese to accepted food -->
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>RimBees</li>
+          </mods>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/RoyalTitleDef[defName="Esquire" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/foodRequirement/allowedDefs</xpath>
+            <value>
+              <li>VCE_BeeCheese</li>
+            </value>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <!-- Toggable -->
+  <Operation Class="VFECore.PatchOperationToggable">
+    <enabled>False</enabled>
+    <mods>
+      <li>Vanilla Cooking Expanded</li>
+      <li>Genetic Rim</li>
+    </mods>
+    <label>Rat cheese acceptable by royals:</label>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/RoyalTitleDef[defName="Esquire" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/foodRequirement/allowedDefs</xpath>
+      <value>
+        <li>VCE_RatCheese</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>
