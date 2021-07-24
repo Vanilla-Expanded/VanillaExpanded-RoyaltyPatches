@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <!-- Royalty clothes -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Factions Expanded - Medieval</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VFEM_Apparel_DameDress"]/apparel/tags</xpath>
+          <value>
+            <li>RoyalTier2</li>
+            <li>RoyalTier5</li>
+            <li>RoyalTier6</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VFEM_Apparel_KingsRobes"]/apparel/tags</xpath>
+          <value>
+            <li>RoyalTier2</li>
+            <li>RoyalTier5</li>
+            <li>RoyalTier6</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VFEM_Apparel_DameHat"]/apparel/tags</xpath>
+          <value>
+            <li>RoyalTier2</li>
+            <li>RoyalTier5</li>
+            <li>RoyalTier6</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VFEM_Apparel_KingsCrown"]/apparel/tags</xpath>
+          <value>
+            <li>RoyalTier2</li>
+            <li>RoyalTier5</li>
+            <li>RoyalTier6</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
