@@ -56,27 +56,25 @@
     </match>
   </Operation>
   <!-- Toggable -->
-  <Operation Class="VFECore.PatchOperationToggable">
+  <Operation Class="VFECore.PatchOperationToggableSequence">
     <enabled>False</enabled>
+    <label>Allow royals to use double fur bed:</label>
     <mods>
       <li>Vanilla Factions Expanded - Vikings</li>
     </mods>
-    <label>Allow royals to use double fur bed:</label>
-    <match Class="PatchOperationSequence">
-      <operations>
-        <li Class="PatchOperationAdd">
-          <xpath>/Defs/RoyalTitleDef[defName="Esquire"]/bedroomRequirements//li[3]/things</xpath>
-          <value>
-            <li>VFEV_DoubleFurBed</li>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[4]/things</xpath>
-          <value>
-            <li>VFEV_DoubleFurBed</li>
-          </value>
-        </li>
-      </operations>
-    </match>
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RoyalTitleDef[defName="Acolyte"]/bedroomRequirements//li[3]/things</xpath>
+        <value>
+          <li>VFEV_DoubleFurBed</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[4]/things</xpath>
+        <value>
+          <li>VFEV_DoubleFurBed</li>
+        </value>
+      </li>
+    </operations>
   </Operation>
 </Patch>
