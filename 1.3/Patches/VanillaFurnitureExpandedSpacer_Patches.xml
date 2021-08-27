@@ -8,25 +8,19 @@
     <match Class="PatchOperationSequence">
       <operations>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/RoyalTitleDef[defName="Acolyte"]/bedroomRequirements//li[3]/things</xpath>
+          <xpath>/Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][disablingPrecepts/li="SlabBed_Preferred"]/things</xpath>
           <value>
             <li>Bed_AdvDoubleBed</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[4]/things</xpath>
-          <value>
-            <li>Bed_AdvDoubleBed</li>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[5]/things</xpath>
+          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="EndTable"]/things</xpath>
           <value>
             <li>Table_IlluminatedEndTable</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[6]/things</xpath>
+          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]/things</xpath>
           <value>
             <li>Table_IlluminatedDresser</li>
           </value>

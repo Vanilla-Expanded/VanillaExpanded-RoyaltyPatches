@@ -13,15 +13,12 @@
 You do not need all the Vanilla Expanded mods for this to work - the patches trigger only if their respective mods are found.
     
 This mod requires Royalty to work, obviously.</description>
-  <loadBefore>
-    <li>VanillaExpanded.VFECore</li>
-    <li>VanillaExpanded.VFESpacer</li>
-  </loadBefore>
   <loadAfter>
-    <li>Ludeon.RimWorld</li>
-    <li>Ludeon.RimWorld.Royalty</li>
-    <li>brrainz.harmony</li>
     <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    <li>Ludeon.RimWorld.Ideology</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>Ludeon.RimWorld</li>
+    <li>brrainz.harmony</li>
   </loadAfter>
   <modDependencies>
 		<li>

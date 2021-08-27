@@ -7,18 +7,24 @@
     <match Class="PatchOperationSequence">
       <operations>
         <li Class="PatchOperationAdd">
-          <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements//li[6]/things</xpath>
+          <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Column"]/things</xpath>
           <value>
             <li>VFEV_RunedColumn</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements//li[5]/things</xpath>
+          <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Brazier"]/things</xpath>
           <value>
             <li>VFEV_Hearth</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
+          <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements/li[@Class="RoomRequirement_AllThingsAnyOfAreGlowing"][labelKey="RoomRequirementAllBraziersMustBeLit"]/things</xpath>
+          <value>
+            <li>VFEV_Hearth</li>
+          </value>
+        </li>
+        <!-- <li Class="PatchOperationAdd">
           <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements</xpath>
           <value>
             <li Class="RoomRequirement_AllThingsAreGlowing">
@@ -26,7 +32,7 @@
               <thingDef>VFEV_Hearth</thingDef>
             </li>
           </value>
-        </li>
+        </li> -->
       </operations>
     </match>
   </Operation>
@@ -64,13 +70,7 @@
     </mods>
     <operations>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/RoyalTitleDef[defName="Acolyte"]/bedroomRequirements//li[3]/things</xpath>
-        <value>
-          <li>VFEV_DoubleFurBed</li>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[4]/things</xpath>
+        <xpath>/Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][disablingPrecepts/li="SlabBed_Preferred"]/things</xpath>
         <value>
           <li>VFEV_DoubleFurBed</li>
         </value>

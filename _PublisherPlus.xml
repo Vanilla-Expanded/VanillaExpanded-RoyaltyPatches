@@ -3,6 +3,5 @@
   <Excluded>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Vanilla-Expanded-RoyaltyPatches\.git</exclude>
     <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Vanilla-Expanded-RoyaltyPatches\1.2\Source</exclude>
-    <exclude>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Vanilla-Expanded-RoyaltyPatches\1.3\Source</exclude>
   </Excluded>
 </Configuration>

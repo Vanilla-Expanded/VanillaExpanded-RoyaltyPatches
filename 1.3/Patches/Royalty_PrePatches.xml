@@ -2,7 +2,7 @@
 <Patch>
   <!-- Replace RoomRequirement_Thing with RoomRequirement_ThingAnyOf for EndTable and Dresser -->
   <Operation Class="PatchOperationReplace">
-    <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[5]</xpath>
+    <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[@Class="RoomRequirement_Thing"][thingDef="EndTable"]</xpath>
     <value>
       <li Class="RoomRequirement_ThingAnyOf">
         <things>
@@ -12,7 +12,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationReplace">
-    <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[6]</xpath>
+    <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[@Class="RoomRequirement_Thing"][thingDef="Dresser"]</xpath>
     <value>
       <li Class="RoomRequirement_ThingAnyOf">
         <things>
@@ -22,12 +22,12 @@
     </value>
   </Operation>
 
-  <!-- Replace ThroneRoomRequirements RoomRequirement_ThingCount with the custom VERP.RoomRequirement_ThingAnyOfCount -->
+  <!-- Replace ThroneRoomRequirements RoomRequirement_ThingCount with RoomRequirement_ThingAnyOfCount -->
   <!-- Replace columns -->
   <Operation Class="PatchOperationReplace">
-    <xpath>Defs/RoyalTitleDef[defName="Knight"]/throneRoomRequirements//li[6]</xpath>
+    <xpath>Defs/RoyalTitleDef[defName="Knight"]/throneRoomRequirements//li[@Class="RoomRequirement_ThingCount"][thingDef="Column"]</xpath>
     <value>
-      <li Class="VERP.RoomRequirement_ThingAnyOfCount">
+      <li Class="RoomRequirement_ThingAnyOfCount">
         <things>
           <li>Column</li>
         </things>
@@ -37,9 +37,9 @@
   </Operation>
 
   <Operation Class="PatchOperationReplace">
-    <xpath>Defs/RoyalTitleDef[defName="Praetor" or defName="Baron"]/throneRoomRequirements//li[6]</xpath>
+    <xpath>Defs/RoyalTitleDef[defName="Praetor" or defName="Baron"]/throneRoomRequirements//li[@Class="RoomRequirement_ThingCount"][thingDef="Column"]</xpath>
     <value>
-      <li Class="VERP.RoomRequirement_ThingAnyOfCount">
+      <li Class="RoomRequirement_ThingAnyOfCount">
         <things>
           <li>Column</li>
         </things>
@@ -49,26 +49,13 @@
   </Operation>
 
   <Operation Class="PatchOperationReplace">
-    <xpath>Defs/RoyalTitleDef[defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements//li[6]</xpath>
+    <xpath>Defs/RoyalTitleDef[defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements//li[@Class="RoomRequirement_ThingCount"][thingDef="Column"]</xpath>
     <value>
-      <li Class="VERP.RoomRequirement_ThingAnyOfCount">
+      <li Class="RoomRequirement_ThingAnyOfCount">
         <things>
           <li>Column</li>
         </things>
         <count>6</count>
-      </li>
-    </value>
-  </Operation>
-
-  <!-- Replace brazier -->
-  <Operation Class="PatchOperationReplace">
-    <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements//li[5]</xpath>
-    <value>
-      <li Class="VERP.RoomRequirement_ThingAnyOfCount">
-        <things>
-          <li>Brazier</li>
-        </things>
-        <count>2</count>
       </li>
     </value>
   </Operation>

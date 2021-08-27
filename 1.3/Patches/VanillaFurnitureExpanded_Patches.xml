@@ -6,30 +6,22 @@
     </mods>
     <match Class="PatchOperationSequence">
       <operations>
-        <!-- Royalty need patches-->
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/RoyalTitleDef[defName="Acolyte"]/bedroomRequirements//li[3]/things</xpath>
+          <xpath>/Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][disablingPrecepts/li="SlabBed_Preferred"]/things</xpath>
           <value>
             <li>Bed_Kingsize</li>
             <li>Bed_DoubleErgonomic</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[4]/things</xpath>
-          <value>
-            <li>Bed_Kingsize</li>
-            <li>Bed_DoubleErgonomic</li>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[5]/things</xpath>
+          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="EndTable"]/things</xpath>
           <value>
             <li>Table_LightEndTable</li>
             <li>Table_RoyalEndTable</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements//li[6]/things</xpath>
+          <xpath>/Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]/things</xpath>
           <value>
             <li>Table_RoyalDresser</li>
           </value>
@@ -50,7 +42,7 @@
         <li Class="PatchOperationAdd">
           <xpath>/Defs/ThingDef[defName="Joy_Piano"]/building</xpath>
           <value>
-            <instrumentRange>20</instrumentRange>
+            <instrumentRange>12</instrumentRange>
           </value>
         </li>
         <li Class="PatchOperationReplace">
@@ -72,9 +64,9 @@
             <li>Joy_Piano</li>
           </value>
         </li>
-        <!-- Use the royalty one -->
+        <!-- Allow for royalty -->
         <li Class="PatchOperationAdd">
-          <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor"]/throneRoomRequirements//li[7]/things</xpath>
+          <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron"]/throneRoomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Harpsichord"]/things</xpath>
           <value>
             <li>Joy_Piano</li>
           </value>
@@ -86,6 +78,13 @@
             <tradeTags>
               <li>MusicalInstrument</li>
             </tradeTags>
+          </value>
+        </li>
+        <!-- Campfire link with stone campfire-->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+          <value>
+            <li>Stone_Campfire</li>
           </value>
         </li>
       </operations>

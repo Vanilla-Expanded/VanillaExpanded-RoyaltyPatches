@@ -8,7 +8,7 @@
     <match Class="PatchOperationSequence">
       <operations>
         <li Class="PatchOperationAdd">
-          <xpath>Defs/RoyalTitleDef[defName=defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements//li[6]/things</xpath>
+          <xpath>Defs/RoyalTitleDef[defName=defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements/li[@Class="RoomRequirement_ThingAnyOfCount"][things/li="Column"]/things</xpath>
           <value>
             <li>VFE_Pillar</li>
           </value>
