@@ -87,6 +87,28 @@
             <li>Stone_Campfire</li>
           </value>
         </li>
+        <!-- Heart link with stone campfire -->
+        <li Class="PatchOperationFindMod">
+          <mods>
+            <li>Vanilla Factions Expanded - Vikings</li>
+          </mods>
+          <match Class="PatchOperationSequence">
+            <operations>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="VFEV_Hearth"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+                <value>
+                  <li>Stone_Campfire</li>
+                </value>
+              </li>
+              <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Stone_Campfire"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+                <value>
+                  <li>VFEV_Hearth</li>
+                </value>
+              </li>
+            </operations>
+          </match>
+        </li>
       </operations>
     </match>
   </Operation>

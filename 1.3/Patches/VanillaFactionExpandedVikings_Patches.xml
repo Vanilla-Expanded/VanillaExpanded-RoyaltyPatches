@@ -24,15 +24,12 @@
             <li>VFEV_Hearth</li>
           </value>
         </li>
-        <!-- <li Class="PatchOperationAdd">
-          <xpath>Defs/RoyalTitleDef[defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count" or @Name="BaseEmpireTitleNPC"]/throneRoomRequirements</xpath>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
           <value>
-            <li Class="RoomRequirement_AllThingsAreGlowing">
-              <labelKey>RoomRequirementAllHearthsMustBeLit</labelKey>
-              <thingDef>VFEV_Hearth</thingDef>
-            </li>
+            <li>VFEV_Hearth</li>
           </value>
-        </li> -->
+        </li>
       </operations>
     </match>
   </Operation>
