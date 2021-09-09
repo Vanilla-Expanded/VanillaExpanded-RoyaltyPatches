@@ -20,6 +20,9 @@ This mod requires Royalty to work, obviously.</description>
     <li>Ludeon.RimWorld</li>
     <li>brrainz.harmony</li>
   </loadAfter>
+  <loadBefore>
+    <li>Mlie.MoreFurniture</li>
+  </loadBefore>
   <modDependencies>
 		<li>
 			<packageId>Ludeon.RimWorld.Royalty</packageId>
