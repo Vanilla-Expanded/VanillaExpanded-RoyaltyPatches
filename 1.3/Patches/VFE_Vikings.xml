@@ -30,16 +30,36 @@
             <li>VFEV_Hearth</li>
           </value>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <!-- Royalty clothes -->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Vanilla Factions Expanded - Vikings</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VFEV_Hearth"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+          <value>
+            <li>VFEV_Hearth</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Darktorch</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">DarktorchFungus</li>
+            <li MayRequire="OskarPotocki.VanillaExpanded.IdeologyPatches">VFEV_DarkHearth</li>
+            <li MayRequire="VanillaExpanded.VFECore,OskarPotocki.VanillaExpanded.IdeologyPatches">Stone_DarklightCampfire</li>
+            <li MayRequire="VanillaExpanded.VFECore">Stone_Campfire</li>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule,OskarPotocki.VanillaExpanded.IdeologyPatches">VFEM_DarkCandle</li>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule,OskarPotocki.VanillaExpanded.IdeologyPatches">VFEM_WallTorchDarkLamp</li>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_Candle</li>
+            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">VFEM_WallTorchLamp</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VFEV_Hearth"]/placeWorkers</xpath>
+          <value>
+            <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Campfire" or defName="TorchLamp" or defName="DarktorchFungus" or defName="Darktorch" or defName="Brazier" or defName="DarklightBrazier"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+          <value>
+            <li>VFEV_Hearth</li>
+            <li MayRequire="OskarPotocki.VanillaExpanded.IdeologyPatches">VFEV_DarkHearth</li>
+          </value>
+        </li>
+        <!-- Royalty clothes -->
         <li Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="VFEV_JarlCrown"]/apparel/tags</xpath>
           <value>
