@@ -50,9 +50,9 @@
           <value>
             <li MayRequire="OskarPotocki.VanillaExpanded.IdeologyPatches">VFEM_DarkCandle</li>
             <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
-            <li MayRequire="VanillaExpanded.VFECore">Stone_DarklightCampfire</li>
+            <li MayRequire="VanillaExpanded.VFECore, OskarPotocki.VanillaExpanded.IdeologyPatches">Stone_DarklightCampfire</li>
             <li MayRequire="VanillaExpanded.VFECore">Stone_Campfire</li>
-            <li MayRequire="OskarPotocki.VFE.Vikings">VFEV_DarkHearth</li>
+            <li MayRequire="OskarPotocki.VFE.Vikings,OskarPotocki.VanillaExpanded.IdeologyPatches">VFEV_DarkHearth</li>
             <li MayRequire="OskarPotocki.VFE.Vikings">VFEV_Hearth</li>
           </value>
         </li>
