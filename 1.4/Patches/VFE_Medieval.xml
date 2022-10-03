@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <!-- Royalty clothes -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Factions Expanded - Medieval</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VFEM_Apparel_DameDress"]/apparel/tags</xpath>
+          <value>
+            <li>RoyalTier2</li>
+            <li>RoyalTier5</li>
+            <li>RoyalTier6</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VFEM_Apparel_KingsRobes"]/apparel/tags</xpath>
+          <value>
+            <li>RoyalTier2</li>
+            <li>RoyalTier5</li>
+            <li>RoyalTier6</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VFEM_Apparel_DameHat"]/apparel/tags</xpath>
+          <value>
+            <li>RoyalTier2</li>
+            <li>RoyalTier5</li>
+            <li>RoyalTier6</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VFEM_Apparel_KingsCrown"]/apparel/tags</xpath>
+          <value>
+            <li>RoyalTier2</li>
+            <li>RoyalTier5</li>
+            <li>RoyalTier6</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Campfire"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+          <value>
+            <li MayRequire="OskarPotocki.VanillaExpanded.IdeologyPatches">VFEM_DarkCandle</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VFEM_Candle"]/comps/li[@Class="CompProperties_MeditationFocus"]/offsets/li[@Class="FocusStrengthOffset_BuildingDefsLit"]/defs</xpath>
+          <value>
+            <li MayRequire="OskarPotocki.VanillaExpanded.IdeologyPatches">VFEM_DarkCandle</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+            <li MayRequire="VanillaExpanded.VFECore, OskarPotocki.VanillaExpanded.IdeologyPatches">Stone_DarklightCampfire</li>
+            <li MayRequire="VanillaExpanded.VFECore">Stone_Campfire</li>
+            <li MayRequire="OskarPotocki.VFE.Vikings,OskarPotocki.VanillaExpanded.IdeologyPatches">VFEV_DarkHearth</li>
+            <li MayRequire="OskarPotocki.VFE.Vikings">VFEV_Hearth</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
