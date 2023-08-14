@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Empire</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Furniture Expanded - Spacer Module</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/RoyalTitleDef[@ParentName="DukeBase" or defName = "VFEE_Archcount" or @ParentName="ConsulBase" or defName = "VFEE_Marquess" or defName = "VFEE_Archduke" or  defName = "VFEE_Magister" or defName = "VFEE_Despot" or defName = "VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][disablingPrecepts/li="SlabBed_Preferred"]/things</xpath>
+								<value>
+									<li>Bed_Kingsize</li>
+									<li>Bed_DoubleErgonomic</li>
+									<li>Bed_AdvDoubleBed</li>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/RoyalTitleDef[@ParentName="DukeBase" or defName = "VFEE_Archcount" or @ParentName="ConsulBase" or defName = "VFEE_Marquess" or defName = "VFEE_Archduke" or defName = "VFEE_Magister" or defName = "VFEE_Despot" or defName = "VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="EndTable"]/things</xpath>
+								<value>
+									<li Class="RoomRequirement_ThingAnyOf">
+										<things>
+											<li>EndTable</li>
+											<li>Table_LightEndTable</li>
+											<li>Table_IlluminatedEndTable</li>
+											<li>Table_RoyalEndTable</li>
+										</things>
+									</li>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/RoyalTitleDef[@ParentName="DukeBase" or defName = "VFEE_Archcount" or @ParentName="ConsulBase" or defName = "VFEE_Marquess" or defName = "VFEE_Archduke" or defName = "VFEE_Magister" or defName = "VFEE_Despot" or defName = "VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]/things</xpath>
+								<value>
+									<li Class="RoomRequirement_ThingAnyOf">
+										<things>
+											<li>Dresser</li>
+											<li>Table_IlluminatedDresser</li>
+											<li>Table_RoyalDresser</li>
+										</things>
+									</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationFindMod">
+								<mods>
+									<li>Vanilla Furniture Expanded</li>
+								</mods>
+								<match Class="PatchOperationSequence">
+									<operations>
+										<li Class="PatchOperationReplace">
+											<xpath>Defs/RoyalTitleDef[@ParentName="DukeBase" or defName = "VFEE_Archcount" or @ParentName="ConsulBase" or defName = "VFEE_Marquess" or defName = "VFEE_Archduke" or defName = "VFEE_Magister" or defName = "VFEE_Despot" or defName = "VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="EndTable"]/things</xpath>
+											<value>
+												<li Class="RoomRequirement_ThingAnyOf">
+													<things>
+														<li>EndTable</li>
+													</things>
+												</li>
+											</value>
+										</li>
+										<li Class="PatchOperationReplace">
+											<xpath>Defs/RoyalTitleDef[@ParentName="DukeBase" or defName = "VFEE_Archcount" or @ParentName="ConsulBase" or defName = "VFEE_Marquess" or defName = "VFEE_Archduke" or defName = "VFEE_Magister" or defName = "VFEE_Despot" or defName = "VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]/things</xpath>
+											<value>
+												<li Class="RoomRequirement_ThingAnyOf">
+													<things>
+														<li>Dresser</li>
+													</things>
+												</li>
+											</value>
+										</li>
+										<li Class="PatchOperationAdd">
+											<xpath>/Defs/RoyalTitleDef[@ParentName="DukeBase" or defName = "VFEE_Archcount" or @ParentName="ConsulBase or defName = "VFEE_Marquess" or defName = "VFEE_Archduke" or defName = "VFEE_Magister" or defName = "VFEE_Despot" or defName = "VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][disablingPrecepts/li="SlabBed_Preferred"]/things</xpath>
+											<value>
+												<li>Bed_DoubleErgonomic</li>
+												<li>Bed_Kingsize</li>
+											</value>
+										</li>
+										<li Class="PatchOperationAdd">
+											<xpath>/Defs/RoyalTitleDef[@ParentName="DukeBase" or defName = "VFEE_Archcount" or @ParentName="ConsulBase or defName = "VFEE_Marquess" or defName = "VFEE_Archduke" or defName = "VFEE_Magister" or defName = "VFEE_Despot" or defName = "VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="EndTable"]/things</xpath>
+											<value>
+												<li>Table_LightEndTable</li>
+												<li>Table_RoyalEndTable</li>
+											</value>
+										</li>
+										<li Class="PatchOperationAdd">
+											<xpath>/Defs/RoyalTitleDef[@ParentName="DukeBase" or  defName = "VFEE_Archcount" or @ParentName="ConsulBase or defName = "VFEE_Marquess" or defName = "VFEE_Archduke" or defName = "VFEE_Magister" or defName = "VFEE_Despot" or defName = "VFEE_HighStellarch"]/bedroomRequirements/li[@Class="RoomRequirement_ThingAnyOf"][things/li="Dresser"]/things</xpath>
+											<value>
+												<li>Table_RoyalDresser</li>
+											</value>
+										</li>
+									</operations>
+								</match>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
